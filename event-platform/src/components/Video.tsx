@@ -1,7 +1,3 @@
-function Video() {
-  return (
-   <h1 className="text-2xl">Hello World</h1>
-  )
+export function Video() {
+  return <div className="flex-1">Video</div>;
 }
-
-export default Video

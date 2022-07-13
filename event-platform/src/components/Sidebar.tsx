@@ -1,7 +1,12 @@
-function Sidebar() {
-  return (
-   <h1 className="text-2xl">Hello World</h1>
-  )
-}
+import { Lesson } from "./Lesson";
 
-export default Sidebar
+export function Sidebar() {
+  return (
+    <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600">
+      <span className="font-bold text-2xl pb-6 mb-6 border-gray-500-block">Cronograma de aulas</span>
+      <div className="flex flex-col gap-8">
+        <Lesson />
+      </div>
+    </aside>
+  );
+}
