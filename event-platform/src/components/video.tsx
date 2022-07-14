@@ -1,6 +1,6 @@
 import { DefaultUi, Player, Youtube as YouTube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, ImageSquare, Lightning } from "phosphor-react";
-import { Footer } from "./Footer";
+import { Footer } from "./footer";
 
 export function Video() {
   return (

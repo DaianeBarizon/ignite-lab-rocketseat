@@ -1,6 +1,6 @@
-import { Header } from "../components/Header";
-import { Sidebar } from "../components/Sidebar";
-import { Video } from "../components/Video";
+import { Header } from "../components/header";
+import { Sidebar } from "../components/sidebar";
+import { Video } from "../components/video";
 
 export function Event() {
   return (

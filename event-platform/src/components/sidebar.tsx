@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { Lesson } from "./Lesson";
+import { Lesson } from "./lesson";
 
 const GET_LESSON_QUERY = gql`
   query {
