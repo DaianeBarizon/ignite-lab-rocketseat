@@ -1,3 +1,4 @@
+import { DefaultUi, Player, Youtube as YouTube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, ImageSquare, Lightning } from "phosphor-react";
 import { Footer } from "./Footer";
 
@@ -5,10 +6,15 @@ export function Video() {
   return (
     <div className="flex-1">
       <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video"></div>
+        <div className="p-6 h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+          <Player>
+            <YouTube videoId="kg2-SMolAV0" />
+            <DefaultUi />
+          </Player>
+        </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto">
+      <div className="p-6 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">Aula 01 - Criando o projeto e realizando o setup inicial</h1>
