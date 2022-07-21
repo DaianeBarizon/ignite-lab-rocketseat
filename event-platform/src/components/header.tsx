@@ -1,4 +1,4 @@
-import { LogoHeader } from "../icons/logo-header";
+import { LogoHeader } from "../assets/icons/logo-header";
 
 export function Header() {
   return (

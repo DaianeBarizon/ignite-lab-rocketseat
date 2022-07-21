@@ -1,4 +1,4 @@
-import { LogoFooter } from "../icons/logo-footer";
+import { LogoFooter } from "../assets/icons/logo-footer";
 
 export function Footer() {
   return (
