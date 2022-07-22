@@ -10,7 +10,13 @@ export function Event() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex flex-1">
-        {slug ? <Video lessonSlug={slug} /> : <div className="flex-1" />}
+        {slug ? (
+          <Video lessonSlug={slug} />
+        ) : (
+          <div className="flex-1 flex align-center">
+            <img src="/src/assets/image/wallpaper.png" alt="background" />
+          </div>
+        )}
         <Sidebar />
       </main>
     </div>
