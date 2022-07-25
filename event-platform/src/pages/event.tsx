@@ -9,11 +9,11 @@ export function Event() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex flex-1">
+      <main className="flex md:flex-row flex-col-reverse">
         {slug ? (
           <Video lessonSlug={slug} />
         ) : (
-          <div className="flex-1 flex align-center">
+          <div className="flex md:flex-row flex-1 flex-col-reserve align-center">
             <img src="/src/assets/image/wallpaper.png" alt="background" />
           </div>
         )}

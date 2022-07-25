@@ -32,8 +32,8 @@ export function Subscribe() {
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
       <div className="bg-logo bg-no-repeat bg-top m-5">
-        <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-          <div className="max-w-[640px]">
+        <div className="w-full max-w-[1100px] md:flex  items-center justify-between mt-20 mx-auto">
+          <div className="max-w-[640px] m-5">
             <LogoHeader />
 
             <h1 className="mt-8 text-[2.5rem] leading-tight">
