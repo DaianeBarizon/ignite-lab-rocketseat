@@ -27,7 +27,11 @@ export function Sidebar() {
   const { data } = useQuery<GetLessonQueryResponse>(GET_LESSON_QUERY);
 
   if (!data) {
-    return <p>carregando...</p>;
+    return (
+      <div className="flex justify-center m-4">
+        <p>carregando...</p>
+      </div>
+    );
   }
 
   return (
