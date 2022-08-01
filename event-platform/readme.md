@@ -4,3 +4,4 @@
 <p>https://phosphoricons.com/</p>
 <p>https://app.hygraph.com/</p>
 <p>https://vimejs.com/</p>
+<p>https://www.graphql-code-generator.com/</p>
