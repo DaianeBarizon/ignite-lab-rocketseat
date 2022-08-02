@@ -1,13 +1,14 @@
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./lesson";
+import { Loading } from "./loading";
 
 export function Sidebar() {
   const { data } = useGetLessonsQuery();
 
   if (!data) {
     return (
-      <div className="flex justify-center m-4">
-        <p>carregando...</p>
+      <div className="flex justify-center items-center h-screen w-screen md:w-[348px] bg-gradient-to-b from-gray-600 to-fray-700">
+        <Loading />
       </div>
     );
   }

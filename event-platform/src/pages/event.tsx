@@ -2,6 +2,7 @@ import { isPast } from "date-fns";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Header } from "../components/header";
+import { Loading } from "../components/loading";
 import { Sidebar } from "../components/sidebar";
 import { Video } from "../components/video";
 import { useGetLessonsQuery } from "../graphql/generated";
@@ -23,8 +24,8 @@ export function Event() {
 
   if (!data) {
     return (
-      <div className="flex justify-center m-4">
-        <p>carregando...</p>
+      <div className="flex justify-center items-center h-screen w-screen">
+        <Loading />
       </div>
     );
   }
