@@ -1,6 +1,6 @@
 import { isPast } from "date-fns";
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Header } from "../components/header";
 import { Loading } from "../components/loading";
 import { Sidebar } from "../components/sidebar";
@@ -8,7 +8,15 @@ import { Video } from "../components/video";
 import { Welcome } from "../components/welcome";
 import { useGetLessonsQuery } from "../graphql/generated";
 
+type propState = {
+  name: string;
+};
+
 export function Event() {
+  const { state } = useLocation();
+
+  const { name } = state as propState;
+
   const navigate = useNavigate();
 
   const { slug } = useParams<{ slug: string }>();
@@ -39,7 +47,7 @@ export function Event() {
           <Video lessonSlug={slug} />
         ) : (
           <div className="flex md:flex-row flex-1 flex-col-reserve align-center">
-            <Welcome />
+            <Welcome name={name} />
           </div>
         )}
         <Sidebar />
