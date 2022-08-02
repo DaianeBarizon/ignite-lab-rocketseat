@@ -5,6 +5,7 @@ import { Header } from "../components/header";
 import { Loading } from "../components/loading";
 import { Sidebar } from "../components/sidebar";
 import { Video } from "../components/video";
+import { Welcome } from "../components/welcome";
 import { useGetLessonsQuery } from "../graphql/generated";
 
 export function Event() {
@@ -38,7 +39,7 @@ export function Event() {
           <Video lessonSlug={slug} />
         ) : (
           <div className="flex md:flex-row flex-1 flex-col-reserve align-center">
-            <img src="/src/assets/image/wallpaper.png" alt="background" />
+            <Welcome />
           </div>
         )}
         <Sidebar />
