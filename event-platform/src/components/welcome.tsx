@@ -1,25 +1,25 @@
-import { FileArrowDown } from "phosphor-react";
+import { Horse, Cube, Heart } from "phosphor-react";
 import { Footer } from "./footer";
 
 type propState = {
   name: string;
 };
 
-const array = [
+const arrayMethods = [
   {
-    icon: <FileArrowDown size={40} />,
+    icon: <Cube size={40} />,
     title: "Foco",
     description:
       "Programação é um universo infinito, logo ter foco é essencial. Nós vamos direto ao ponto no que realmente importa para você dominar as ferramentas, não apenas conhecê-las.",
   },
   {
-    icon: <FileArrowDown size={40} />,
+    icon: <Horse size={40} />,
     title: "Prática",
     description:
       "A programação é uma disciplina prática. São as horas de código que vão te preparar e dar a experiência necessária para tomar as melhores decisões no mundo real.",
   },
   {
-    icon: <FileArrowDown size={40} />,
+    icon: <Heart size={40} />,
     title: "Grupo",
     description:
       "A conexão entre Devs impulsiona seu repertório técnico, suas habilidades comportamentais e sua rede de contatos. Além de ajudar a assimilar e fixar todo aprendizado.",
@@ -46,7 +46,7 @@ export function Welcome(props: propState) {
           </div>
         </div>
         <div className="gap-8 mt-20 grid grid-cols-1 lg:grid-cols-3">
-          {array.map((element) => {
+          {arrayMethods.map((element) => {
             return (
               <a
                 href="#"
