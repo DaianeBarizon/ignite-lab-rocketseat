@@ -18,7 +18,7 @@ export function Subscribe() {
       variables: { name, email },
     });
 
-    navigate("/event", { state: { name } });
+    navigate("/event");
   }
 
   return (

@@ -1,10 +1,6 @@
 import { Horse, Cube, Heart } from "phosphor-react";
 import { Footer } from "./footer";
 
-type propState = {
-  name: string;
-};
-
 const arrayMethods = [
   {
     icon: <Cube size={40} />,
@@ -26,9 +22,7 @@ const arrayMethods = [
   },
 ];
 
-export function Welcome(props: propState) {
-  const { name } = props;
-
+export function Welcome() {
   return (
     <div className="flex-1">
       <div className="p-6 max-w-[1100px] mx-auto">
@@ -36,7 +30,7 @@ export function Welcome(props: propState) {
           <img src="/src/assets/image/astronauts.svg" alt="astronauts" className="p-6" />
           <div className="p-6">
             <h1 className="text-5xl font-bold ">
-              Bem vindo(a) {name}, ao programa de especialização para acelerar sua carreira
+              Bem vindo(a), ao programa de especialização para acelerar sua carreira
             </h1>
             <div className="flex">
               <p className="mt-4 p-2 text-orange-300 leading-relaxed rounded border border-orange-300">
