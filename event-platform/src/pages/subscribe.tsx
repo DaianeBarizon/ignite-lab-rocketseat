@@ -1,4 +1,5 @@
-import { useState, FormEvent } from "react";
+import { track } from "@amplitude/analytics-browser";
+import { useState, FormEvent, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogoHeader } from "../assets/icons/logo-header";
 import { useCreateSubscriberMutation } from "../graphql/generated";
@@ -10,6 +11,12 @@ export function Subscribe() {
   const [email, setEmail] = useState("");
 
   const [createSubscriber, { loading }] = useCreateSubscriberMutation();
+
+  useEffect(() => {
+    track("Page View", {
+      name: "Subscribe",
+    });
+  }, []);
 
   function handleSubscribe(event: FormEvent) {
     event.preventDefault();

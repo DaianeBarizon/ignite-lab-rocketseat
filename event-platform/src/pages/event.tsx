@@ -1,3 +1,4 @@
+import { track } from "@amplitude/analytics-browser";
 import { isPast } from "date-fns";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -18,6 +19,10 @@ export function Event() {
   const isPastAvailableAt = data?.lessons.find((item) => isPast(new Date(item.availableAt)));
 
   useEffect(() => {
+    track("Page View", {
+      name: "Event",
+    });
+
     if (!!isPastAvailableAt) {
       navigate(`/event/lesson/${isPastAvailableAt?.slug}`);
     }
