@@ -2,8 +2,7 @@
 
 module.exports = {
   content: [
-    './src/**/*.tsx',
-    './public/image/*.png'
+    './src/**/*.tsx'
   ],
   theme: {
     extend: {
