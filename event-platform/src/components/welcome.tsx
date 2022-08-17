@@ -27,7 +27,7 @@ export function Welcome() {
     <div className="flex-1">
       <div className="p-6 max-w-[1100px] mx-auto">
         <div className="lg:flex justify-center items-center p-6">
-          <img src="/src/public/image/astronauts.svg" alt="astronauts" className="p-6" />
+          <img src="/image/astronauts.svg" alt="astronauts" className="p-6" />
           <div className="p-6">
             <h1 className="text-5xl font-bold ">
               Bem vindo(a), ao programa de especialização para acelerar sua carreira
